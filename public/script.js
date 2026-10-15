@@ -35,12 +35,12 @@
   }
 
   function money(cents) {
-    return '$' + (cents % 100 === 0 ? String(cents / 100) : (cents / 100).toFixed(2));
+    return 'Nu.' + (cents % 100 === 0 ? String(cents / 100) : (cents / 100).toFixed(2));
   }
 
   function parsePriceCents(text) {
-    var n = parseFloat(String(text).replace(/[^0-9.]/g, ''));
-    return isNaN(n) ? 0 : Math.round(n * 100);
+    var m = String(text).match(/[0-9]+(\.[0-9]+)?/);
+    return m ? Math.round(parseFloat(m[0]) * 100) : 0;
   }
 
   function slugify(text) {
@@ -129,7 +129,7 @@
           '<a class="logo" href="./index.html">LUMIERE</a>' +
           '<nav id="site-nav" aria-label="Main">' + links + '</nav>' +
           '<div class="header-actions">' +
-            '<a class="cart-btn" href="./Cart.html" aria-label="Cart, 0 items">' + CART_ICON + '<span class="cart-count" hidden>0</span></a>' +
+            '<a class="cart-btn" href="./cart.html" aria-label="Cart, 0 items">' + CART_ICON + '<span class="cart-count" hidden>0</span></a>' +
             '<button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>' +
           '</div>' +
         '</div></header>');
@@ -146,7 +146,7 @@
               '<li><a href="./Shop.html">All products</a></li>' +
               '<li><a href="./Categories.html">Categories</a></li>' +
               '<li><a href="./New-Arrivals.html">New arrivals</a></li>' +
-              '<li><a href="./Cart.html">Your cart</a></li>' +
+              '<li><a href="./cart.html">Your cart</a></li>' +
             '</ul></div>' +
             '<div><h3>Company</h3><ul>' +
               '<li><a href="./About.html">About us</a></li>' +
@@ -316,9 +316,9 @@
       '<ul class="drawer-list"></ul>' +
       '<div class="drawer-empty">' + CART_ICON + '<p>Your cart is empty.</p><a class="btn" href="./Shop.html">Start shopping</a></div>' +
       '<div class="drawer-foot">' +
-        '<div class="summary-row"><span>Subtotal</span><strong class="drawer-total">$0</strong></div>' +
-        '<a class="btn btn-block" href="./Cart.html#delivery">Checkout</a>' +
-        '<a class="btn btn-outline btn-block" href="./Cart.html">View cart</a>' +
+        '<div class="summary-row"><span>Subtotal</span><strong class="drawer-total">Nu.0</strong></div>' +
+        '<a class="btn btn-block" href="./cart.html#delivery">Checkout</a>' +
+        '<a class="btn btn-outline btn-block" href="./cart.html">View cart</a>' +
       '</div>';
 
     document.body.appendChild(overlay);
