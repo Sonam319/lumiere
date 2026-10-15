@@ -152,7 +152,7 @@
               '<li><a href="./About.html">About us</a></li>' +
               '<li><a href="./Contact.html">Contact</a></li>' +
             '</ul></div>' +
-            '<div><h3>Visit</h3><p>Your street, Your city</p><p>hello@lumiere.com</p><p>Monday to Saturday, 9am to 6pm</p></div>' +
+            '<div><h3>Visit</h3><p>Changangkha, Thimphu</p><p>sphuntsho@gmail.com</p><p>Monday to Saturday, 9am to 6pm</p></div>' +
           '</div>' +
           '<div class="footer-bottom"><p>&copy; ' + new Date().getFullYear() + ' LUMIERE. All rights reserved.</p><a class="admin-link" href="./admin.html">Admin login</a></div>' +
         '</footer>');
