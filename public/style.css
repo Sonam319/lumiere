@@ -533,10 +533,10 @@ body[data-page="home"] #site-header { min-height: var(--announce-h); }
 @media (max-width: 900px) {
   .nav-toggle { display: inline-flex; }
   .header-actions { margin-left: auto; }
-  .site-header nav { position: absolute; top: 100%; left: 0; right: 0; display: none; flex-direction: column; gap: 0; margin: 0; padding: 0.5rem 5% 1rem; background-color: var(--bg); border-bottom: 1px solid var(--border); box-shadow: 0 14px 30px rgba(43, 38, 35, 0.1); }
-  .site-header.menu-open nav { display: flex; }
-  .site-header nav a { padding: 0.9rem 0; border-bottom: 1px solid var(--border); }
-  .site-header nav a::after { display: none; }
+  #Header nav { position: absolute; top: 100%; left: 0; right: 0; display: none; flex-direction: column; gap: 0; margin: 0; padding: 0.5rem 5% 1rem; background-color: var(--bg); border-bottom: 1px solid var(--border); box-shadow: 0 14px 30px rgba(43, 38, 35, 0.1); }
+  #Header.menu-open nav { display: flex; }
+  #Header nav a { padding: 0.9rem 0; border-bottom: 1px solid var(--border); color: #2b2623; }
+  #Header nav a::after { display: none; }
   .split, .split.wide, .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
   .split.reverse .split-media { order: 0; }
   .category-grid.large { grid-template-columns: 1fr; }
