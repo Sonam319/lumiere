@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIERE | Handbags</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body data-page="home">
+    <div id="site-header"></div>
+
+    <main>
+        <section class="hero on-dark">
+            <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+                <source src="./Images/Video-web.mp4" type="video/mp4">
+                <source src="./Images/Video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-inner">
+                <p class="eyebrow">Welcome to LUMIERE</p>
+                <h1>New season,<br>new you</h1>
+                <p class="hero-text">Timeless style. Thoughtful details. Made for you.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-light" href="./Shop.html">Shop now</a>
+                    <a class="btn btn-gold" href="./New-Arrivals.html">New arrivals</a>
+                </div>
+            </div>
+            <div class="hero-foot">
+                <div class="hero-foot-inner">
+                    <button class="hero-toggle" type="button">Pause video</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="strip on-dark" aria-label="Why LUMIERE">
+            <div class="strip-item"><span class="strip-num">01</span><div><h3>Handcrafted quality</h3><p>Made in small batches from carefully chosen materials.</p></div></div>
+            <div class="strip-item"><span class="strip-num">02</span><div><h3>Order with confidence</h3><p>Every order is confirmed personally by our team.</p></div></div>
+            <div class="strip-item"><span class="strip-num">03</span><div><h3>We are here to help</h3><p>Questions? Reach us any day through the contact page.</p></div></div>
+        </section>
+
+        <section class="section">
+            <div class="section-head">
+                <p class="eyebrow">Bestsellers</p>
+                <h2>Featured pieces</h2>
+                <p>A few of the bags our customers come back for.</p>
+            </div>
+            <div class="product-grid">
+                <article class="product-card" data-id="noir-hobo">
+                    <div class="product-img"><span class="badge">Bestseller</span><img src="./Images/bag5.jpg" alt="Black leather hobo bag with a gold clasp" loading="lazy"><button class="add-btn" type="button">Add to cart</button></div>
+                    <div class="product-info"><p class="product-cat">Shoulder bags</p><h3>Noir Hobo</h3><span class="price">Nu.1200</span></div>
+                </article>
+                <article class="product-card" data-id="lagune-top-handle">
+                    <div class="product-img"><span class="badge">New</span><img src="./Images/bag6.avif" alt="Teal leather bag with a gold ring handle" loading="lazy"><button class="add-btn" type="button">Add to cart</button></div>
+                    <div class="product-info"><p class="product-cat">Handbags</p><h3>Lagune Top-Handle</h3><span class="price">Nu.1500</span></div>
+                </article>
+                <article class="product-card" data-id="capri-crossbody">
+                    <div class="product-img pos-right"><span class="badge">New</span><img src="./Images/bag8.avif" alt="Nylon crossbody bag shown in five colours" loading="lazy"><button class="add-btn" type="button">Add to cart</button></div>
+                    <div class="product-info"><p class="product-cat">Crossbody</p><h3>Capri Crossbody</h3><span class="price">Nu.3000</span></div>
+                </article>
+                <article class="product-card" data-id="weekender-duffel">
+                    <div class="product-img crop-bars"><img src="./Images/bag3.jpg" alt="Two patterned weekender duffel bags with shoulder straps" loading="lazy"><button class="add-btn" type="button">Add to cart</button></div>
+                    <div class="product-info"><p class="product-cat">Travel</p><h3>Weekender Duffel</h3><span class="price">Nu.5250</span></div>
+                </article>
+            </div>
+            <div class="section-cta"><a class="btn btn-outline" href="./Shop.html">View all products</a></div>
+        </section>
+
+        <section class="band">
+            <div class="section">
+                <div class="split wide">
+                    <div class="split-media wide"><img src="./Images/bag2.jpg" alt="A selection of handbags on a peach background" loading="lazy"></div>
+                    <div>
+                        <p class="eyebrow">The edit</p>
+                        <h2>Shapes for every day</h2>
+                        <p>From structured top-handles to soft shoulder bags, find the silhouette that suits how you move.</p>
+                        <a class="btn" href="./Categories.html">Browse categories</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-head center">
+                <p class="eyebrow">Categories</p>
+                <h2>Shop by category</h2>
+            </div>
+            <div class="category-grid">
+                <a href="./Shop.html?cat=handbags" class="category-tile"><img src="./Images/bag6.avif" alt="" loading="lazy"><h3>Handbags</h3><span>Shop now</span></a>
+                <a href="./Shop.html?cat=shoulder" class="category-tile"><img src="./Images/bag5.jpg" alt="" loading="lazy"><h3>Shoulder bags</h3><span>Shop now</span></a>
+                <a href="./Shop.html?cat=crossbody" class="category-tile pos-right"><img src="./Images/bag8.avif" alt="" loading="lazy"><h3>Crossbody</h3><span>Shop now</span></a>
+                <a href="./Shop.html?cat=travel" class="category-tile crop-bars"><img src="./Images/bag3.jpg" alt="" loading="lazy"><h3>Travel</h3><span>Shop now</span></a>
+            </div>
+        </section>
+
+        <section class="band">
+            <div class="section">
+                <div class="split">
+                    <div class="split-media portrait"><img src="./Images/story.webp" alt="A woman holding a black leather bag" loading="lazy"></div>
+                    <div>
+                        <p class="eyebrow">Our story</p>
+                        <h2>Made with care</h2>
+                        <p>LUMIERE started with a simple idea: a good bag should look right, feel right and last. We choose materials and details that stay useful long after the season ends.</p>
+                        <a class="btn btn-outline" href="./About.html">Read our story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta on-dark">
+            <p class="eyebrow">Get in touch</p>
+            <h2>Questions about a piece?</h2>
+            <p>We usually reply within one working day.</p>
+            <a href="./Contact.html" class="btn btn-gold">Contact us</a>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="./script.js" defer></script>
+</body>
+</html>

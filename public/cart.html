@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your cart | LUMIERE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body data-page="cart">
+    <div id="site-header"></div>
+
+    <main>
+        <section class="page-banner">
+            <p class="eyebrow">Shopping cart</p>
+            <h1>Your cart</h1>
+            <p>Review your items, add your delivery details and place your order.</p>
+        </section>
+
+        <section class="section">
+            <div id="cart-empty" class="empty-state" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                <h2>Your cart is empty</h2>
+                <p>You have not added anything yet.</p>
+                <a class="btn" href="./Shop.html">Continue shopping</a>
+            </div>
+
+            <div id="cart-content" class="cart-layout">
+                <div class="cart-main">
+                    <section class="panel">
+                        <div class="panel-head">
+                            <h2>Your items</h2>
+                            <button id="clear-cart" class="link-btn" type="button">Clear cart</button>
+                        </div>
+                        <ul id="cart-items" class="cart-rows"></ul>
+                    </section>
+
+                    <section class="panel" id="delivery">
+                        <div class="panel-head"><h2>Delivery details</h2></div>
+                        <form id="checkout-form" class="fields" novalidate>
+                            <div class="form-row">
+                                <div class="form-group"><label for="co-name">Full name</label><input type="text" id="co-name" name="name" autocomplete="name"></div>
+                                <div class="form-group"><label for="co-phone">Phone number</label><input type="tel" id="co-phone" name="phone" autocomplete="tel"></div>
+                            </div>
+                            <div class="form-group"><label for="co-email">Email (optional)</label><input type="email" id="co-email" name="email" autocomplete="email"></div>
+                            <div class="form-group"><label for="co-address">Delivery address</label><textarea id="co-address" name="address" rows="3" autocomplete="street-address"></textarea></div>
+                            <div class="form-group"><label for="co-notes">Order notes (optional)</label><textarea id="co-notes" name="notes" rows="2"></textarea></div>
+                            <div class="form-group">
+                                <label for="co-payment">Payment method</label>
+                                <select id="co-payment" name="payment">
+                                    <option value="cod">Cash on delivery</option>
+                                    <option value="bank">Bank transfer (we will send details)</option>
+                                </select>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+
+                <aside class="panel cart-summary" aria-labelledby="summary-title">
+                    <h2 id="summary-title">Order summary</h2>
+                    <div class="summary-row"><span>Items (<span id="sum-count">0</span>)</span><span id="sum-subtotal">$0</span></div>
+                    <div class="summary-row"><span>Delivery</span><span>Confirmed after you order</span></div>
+                    <div class="summary-row total"><span>Total</span><strong id="sum-total">$0</strong></div>
+                    <button id="place-order" class="btn btn-block" type="submit" form="checkout-form">Place order</button>
+                    <p id="order-status" class="form-status" role="status" aria-live="polite"></p>
+                    <a class="link-btn" href="./Shop.html">Continue shopping</a>
+                </aside>
+            </div>
+
+            <div id="order-done" class="panel done-panel" hidden>
+                <div class="done-check"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 13l4 4L19 7"/></svg></div>
+                <h2 id="done-title" tabindex="-1">Thank you, your order is in</h2>
+                <p>Your order number is</p>
+                <p class="order-number" id="done-number"></p>
+                <ul id="done-items" class="order-lines"></ul>
+                <div class="summary-row total"><span>Total</span><strong id="done-total"></strong></div>
+                <p id="done-note"></p>
+                <a class="btn" href="./Shop.html">Continue shopping</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="./script.js" defer></script>
+</body>
+</html>

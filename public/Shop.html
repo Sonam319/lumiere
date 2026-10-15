@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | LUMIERE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body data-page="shop">
+    <div id="site-header"></div>
+
+    <main>
+        <section class="page-banner">
+            <p class="eyebrow">The collection</p>
+            <h1>Shop all</h1>
+            <p>Every LUMIERE piece, made with care and built to last.</p>
+        </section>
+
+        <section class="section">
+            <div class="shop-toolbar">
+                <div class="filter-bar" role="group" aria-label="Filter by category">
+                    <button class="pill active" type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button class="pill" type="button" data-filter="handbags" aria-pressed="false">Handbags</button>
+                    <button class="pill" type="button" data-filter="shoulder" aria-pressed="false">Shoulder bags</button>
+                    <button class="pill" type="button" data-filter="crossbody" aria-pressed="false">Crossbody</button>
+                    <button class="pill" type="button" data-filter="travel" aria-pressed="false">Travel</button>
+                </div>
+                <div class="toolbar-right">
+                    <span id="result-count" class="result-count" aria-live="polite">6 products</span>
+                    <select id="sort" class="sort-select" aria-label="Sort products">
+                        <option value="featured">Featured</option>
+                        <option value="price-asc">Price: low to high</option>
+                        <option value="price-desc">Price: high to low</option>
+                        <option value="name">Name</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="shop-grid" class="product-grid cols-3">
+                <article class="product-card" data-id="noir-hobo" data-category="shoulder">
+                    <div class="product-img"><span class="badge">Bestseller</span><img src="./Images/bag5.jpg" alt="Black leather hobo bag with a gold clasp" loading="lazy"><button class="add-btn" type="button">Add to cart</button></div>
+                    <div class="product-info"><p class="product-cat">Shoulder bags</p><h3>Noir Hobo</h3><span class="price">Nu.1200</span></div>
+                </article>
+                <article class="product-card" data-id="lagune-top-handle" data-category="handbags">
+                    <div class="product-img"><span class="badge">New</span><img src="./Images/bag6.avif" alt="Teal leather bag with a gold ring handle" loading="lazy"><button class="add-btn" type="button">Add to cart</button></div>
+                    <div class="product-info"><p class="product-cat">Handbags</p><h3>Lagune Top-Handle</h3><span class="price">Nu.1500</span></div>
+                </article>
+                <article class="product-card" data-id="capri-crossbody" data-category="crossbody">
+                    <div class="product-img pos-right"><span class="badge">New</span><img src="./Images/bag8.avif" alt="Nylon crossbody bag shown in five colours" loading="lazy"><button class="add-btn" type="button">Add to cart</button></div>
+                    <div class="product-info"><p class="product-cat">Crossbody</p><h3>Capri Crossbody</h3><span class="price">Nu.3000</span></div>
+                </article>
+                <article class="product-card" data-id="weekender-duffel" data-category="travel">
+                    <div class="product-img crop-bars"><img src="./Images/bag3.jpg" alt="Two patterned weekender duffel bags with shoulder straps" loading="lazy"><button class="add-btn" type="button">Add to cart</button></div>
+                    <div class="product-info"><p class="product-cat">Travel</p><h3>Weekender Duffel</h3><span class="price">Nu.5250</span></div>
+                </article>
+                <article class="product-card" data-id="cognac-satchel" data-category="handbags">
+                    <div class="product-img fit-small"><img src="./Images/bag7.jfif" alt="Cognac brown leather satchel with a front flap" loading="lazy"><button class="add-btn" type="button">Add to cart</button></div>
+                    <div class="product-info"><p class="product-cat">Handbags</p><h3>Cognac Satchel</h3><span class="price">Nu.990</span></div>
+                </article>
+                <article class="product-card" data-id="checker-tote" data-category="handbags">
+                    <div class="product-img fit-small"><img src="./Images/bag1.jpg" alt="Three checkered tote bags in different colours" loading="lazy"><button class="add-btn" type="button">Add to cart</button></div>
+                    <div class="product-info"><p class="product-cat">Handbags</p><h3>Checker Tote</h3><span class="price">Nu.1750</span></div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="./script.js" defer></script>
+</body>
+</html>
